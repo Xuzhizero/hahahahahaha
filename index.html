@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+  <style>
+    :root {
+      --base-font-family: Libre Baskerville, Noto Sans,-apple-system, BlinkMacSystemFont, Segoe UI, Ubuntu, Cantarell, Helvetica, Arial, sans-serif;
+      --heading-font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Ubuntu, Cantarell, Helvetica, Arial, sans-serif;
+      --base-font-size: 18px;
+      --base-font-style: normal;
+      --base-font-weight: normal;
+      --base-line-height: 1.8;
+    }
+    .mode-light:root {
+      --color-accent:  #FF4612;
+      --background-color: #FAF9F6;
+      --background-alt-color: #fffefa;
+      --background-gradient-start: rgba(250,249,246, 0.25);
+      --background-gradient-end: rgba(250,249,246, 1);
+      --text-color:  #635F5A;
+      --text-alt-color:  #f3f3f3;
+      --heading-font-color:  #1c0f05;
+      --link-color:  #1c0a05;
+      --link-color-hover:  #ff2a2a;
+      --border-color:  #e6e6e6;
+      --code-color:  #eb5757;
+      --code-background-color:  #e6e6e6;
+    }
+    .mode-dark:root {
+      --color-accent:  #E26E41;
+      --background-color:  #1F1500;
+      --background-alt-color:  #141312;
+      --background-gradient-start: rgba(26,26,28, 0.25);
+      --background-gradient-end: rgba(26,26,28, 1);
+      --text-color:  #f0f0f0;
+      --text-alt-color: #fff;
+      --heading-font-color:  #f0f0f0;
+      --link-color:  #f0f0f0;
+      --link-color-hover:  #E07E38;
+      --border-color:  #303237;
+      --code-color:  #ababab;
+      --code-background-color:  #454545;
+    }
+  </style>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <title>CoolXuzhi</title>
+    <meta name="description" content="" />
+    <link rel="canonical" href="https://CoolXuzhi.ai" />
+
+            <link rel="shortcut icon" href="https://CoolXuzhi.ai/media/blog-icon-2.svg" />
+
+        <meta property="og:site_name" content="CoolXuzhi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="CoolXuzhi" />
+    <meta property="og:locale" content="en" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="https://CoolXuzhi.ai" />
+    <meta property="og:image" content="https://CoolXuzhi.ai/media/image-18.png" />
+
+
+        <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CoolXuzhi" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:url" content="https://CoolXuzhi.ai" />
+    <meta name="twitter:image" content="https://CoolXuzhi.ai/media/image-18.png" />
+
+            <meta name="twitter:site" content="@tianqiao_chen" />
+
+
+
+
+    <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init zr Wr fi Br Gr ci Nr Hr capture Ui calculateEventProperties Kr register register_once register_for_session unregister unregister_for_session Zr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Xr Jr createPersonProfile Qr jr ts opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Vr debug O Yr getPageViewId captureTraceFeedback captureTraceMetric Or".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_LdRDadTNTkd7ySU8dposEtSaAmznONCNvwRKf9hkxPZ', {
+        api_host: 'https://us.i.posthog.com',
+        defaults: '2025-11-30',
+        person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
+    })
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TV1CC3B1KE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TV1CC3B1KE');
+</script>
+
+<link rel="alternate" type="application/atom+xml" title="CoolXuzhi" href="https://CoolXuzhi.ai/feed" />
+<meta name="generator" content="Hyvor Blogs" />
+
+<link rel="stylesheet" href="https://CoolXuzhi.ai/styles.css?v=190" />
+
+<script>
+
+
+    window._hb = {
+        __domain: "blogs.hyvor.com",
+        subdomain: "coolxuzhi",
+        color_modes: "both",
+        color_mode_default: "os",
+        base_url: "https://CoolXuzhi.ai"
+    };
+
+    (function() {
+
+                var lsKey = 'color-mode-pref';
+
+        window._hb.changeColorMode = function(pref, noSave) {
+            var renderMode = _hb.getColorMode(pref)
+            var a, r; // add, remove classes
+            if (renderMode === 'dark') {
+                a = 'mode-dark';
+                r = 'mode-light';
+            } else {
+                a = 'mode-light';
+                r = 'mode-dark';
+            }
+                        var html = document.documentElement;
+            html.classList.remove(r, 'mode-preference-light', 'mode-preference-dark', 'mode-preference-os');
+            html.classList.add(a, 'mode-preference-' + pref);
+            if (!noSave) {
+                try {localStorage.setItem(lsKey, pref)} catch (e) {}
+            }
+            window.dispatchEvent(new CustomEvent("hb:colorModeChanged", {
+                detail: {
+                    mode: renderMode
+                }
+            }))
+        }
+        window._hb.getColorModePreference = function() {
+            var ls = null;
+            try {
+                ls = localStorage.getItem(lsKey)
+            } catch (e) {}
+            return ls || _hb.color_mode_default; // os|light|dark
+        }
+        window._hb.getColorMode = function(pref) {
+            var mode = pref || _hb.getColorModePreference();
+            if (mode === 'os') {
+                mode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+            return mode
+        }
+
+        _hb.changeColorMode(
+            _hb.color_modes !== "both" ? _hb.color_modes : _hb.getColorModePreference(),
+            true
+        )
+
+                window._hb.dataApi = function(version, endpoint, params, onSuccess, onError) {
+            var url = "//" + _hb.__domain + "/api/data/" + version + "/" + _hb.subdomain + "/" + endpoint
+                + (params ? ("?" + new URLSearchParams(params || {}).toString()) : "");
+            var xhr = new XMLHttpRequest();
+            xhr.onload = function() {
+                onSuccess(JSON.parse(this.responseText))
+            }
+            xhr.onerror = function() {
+                onError && onError()
+            }
+            xhr.open('GET', url, true)
+            xhr.send();
+
+            return xhr;
+        }
+
+    })()
+
+    console.log("%c Hi 👋 This blog is powered by Hyvor Blogs", "font-size:12px;font-family: monospace;display: inline-block;padding: 8px 19px;border: 1px dashed #896c6b;");
+
+</script>
+
+  <script src="https://CoolXuzhi.ai/assets/script.js"></script>
+
+</head>
+
+<body>
+
+<!-- begin header -->
+<header class="header">
+  <div class="container-big">
+    <div class="row">
+      <div class="header__inner col col-12">
+        <div class="logo">
+          <a class="logo__link" href="https://CoolXuzhi.ai">
+                          <img class="logo__image" src="https://CoolXuzhi.ai/media/blog-2.svg" alt=""/>
+                      </a>
+        </div>
+        <div class="hamburger" onclick="menuToggle()" id="hamburger">
+          <div></div>
+        </div>
+        <nav class="main-nav" aria-label="Main menu" id="menuList">
+          <div class="main-nav__box">
+<ul class="nav__list list-reset">
+      <li class="nav__item">
+      <a href="https://CoolXuzhi.ai/disclaimer"
+         class="nav__link nav__disclaimer">
+        Disclaimer
+      </a>
+    </li>
+  </ul>
+          </div>
+          <div class="nav-button">
+                        <div class="color-mode-toggler">
+              <a onclick="_hb.changeColorMode('light')"><?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14" fill="currentColor" style="vertical-align:middle"><path d="M256 118a22 22 0 01-22-22V48a22 22 0 0144 0v48a22 22 0 01-22 22zM256 486a22 22 0 01-22-22v-48a22 22 0 0144 0v48a22 22 0 01-22 22zM369.14 164.86a22 22 0 01-15.56-37.55l33.94-33.94a22 22 0 0131.11 31.11l-33.94 33.94a21.93 21.93 0 01-15.55 6.44zM108.92 425.08a22 22 0 01-15.55-37.56l33.94-33.94a22 22 0 1131.11 31.11l-33.94 33.94a21.94 21.94 0 01-15.56 6.45zM464 278h-48a22 22 0 010-44h48a22 22 0 010 44zM96 278H48a22 22 0 010-44h48a22 22 0 010 44zM403.08 425.08a21.94 21.94 0 01-15.56-6.45l-33.94-33.94a22 22 0 0131.11-31.11l33.94 33.94a22 22 0 01-15.55 37.56zM142.86 164.86a21.89 21.89 0 01-15.55-6.44l-33.94-33.94a22 22 0 0131.11-31.11l33.94 33.94a22 22 0 01-15.56 37.55zM256 358a102 102 0 11102-102 102.12 102.12 0 01-102 102z"/></svg>
+ <span>Light</span></a>
+              <a onclick="_hb.changeColorMode('dark')"><?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14" fill="currentColor" style="vertical-align:middle"><path d="M264 480A232 232 0 0132 248c0-94 54-178.28 137.61-214.67a16 16 0 0121.06 21.06C181.07 76.43 176 104.66 176 136c0 110.28 89.72 200 200 200 31.34 0 59.57-5.07 81.61-14.67a16 16 0 0121.06 21.06C442.28 426 358 480 264 480z"/></svg>
+ <span>Dark</span></a>
+            </div>
+                                    <div class="nav-lang">
+              <a class="lang-label" role="label" onclick="toggleLanguageDropdown()">
+                <?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14" fill="currentColor" style="vertical-align:middle"><path d="M414.39 97.74A224 224 0 1097.61 414.52 224 224 0 10414.39 97.74zM64 256.13a191.63 191.63 0 016.7-50.31c7.34 15.8 18 29.45 25.25 45.66 9.37 20.84 34.53 15.06 45.64 33.32 9.86 16.21-.67 36.71 6.71 53.67 5.36 12.31 18 15 26.72 24 8.91 9.08 8.72 21.52 10.08 33.36a305.36 305.36 0 007.45 41.27c0 .1 0 .21.08.31C117.8 411.13 64 339.8 64 256.13zm192 192a193.12 193.12 0 01-32-2.68c.11-2.71.16-5.24.43-7 2.43-15.9 10.39-31.45 21.13-43.35 10.61-11.74 25.15-19.68 34.11-33 8.78-13 11.41-30.5 7.79-45.69-5.33-22.44-35.82-29.93-52.26-42.1-9.45-7-17.86-17.82-30.27-18.7-5.72-.4-10.51.83-16.18-.63-5.2-1.35-9.28-4.15-14.82-3.42-10.35 1.36-16.88 12.42-28 10.92-10.55-1.41-21.42-13.76-23.82-23.81-3.08-12.92 7.14-17.11 18.09-18.26 4.57-.48 9.7-1 14.09.68 5.78 2.14 8.51 7.8 13.7 10.66 9.73 5.34 11.7-3.19 10.21-11.83-2.23-12.94-4.83-18.21 6.71-27.12 8-6.14 14.84-10.58 13.56-21.61-.76-6.48-4.31-9.41-1-15.86 2.51-4.91 9.4-9.34 13.89-12.27 11.59-7.56 49.65-7 34.1-28.16-4.57-6.21-13-17.31-21-18.83-10-1.89-14.44 9.27-21.41 14.19-7.2 5.09-21.22 10.87-28.43 3-9.7-10.59 6.43-14.06 10-21.46 1.65-3.45 0-8.24-2.78-12.75q5.41-2.28 11-4.23a15.6 15.6 0 008 3c6.69.44 13-3.18 18.84 1.38 6.48 5 11.15 11.32 19.75 12.88 8.32 1.51 17.13-3.34 19.19-11.86 1.25-5.18 0-10.65-1.2-16a190.83 190.83 0 01105 32.21c-2-.76-4.39-.67-7.34.7-6.07 2.82-14.67 10-15.38 17.12-.81 8.08 11.11 9.22 16.77 9.22 8.5 0 17.11-3.8 14.37-13.62-1.19-4.26-2.81-8.69-5.42-11.37a193.27 193.27 0 0118 14.14c-.09.09-.18.17-.27.27-5.76 6-12.45 10.75-16.39 18.05-2.78 5.14-5.91 7.58-11.54 8.91-3.1.73-6.64 1-9.24 3.08-7.24 5.7-3.12 19.4 3.74 23.51 8.67 5.19 21.53 2.75 28.07-4.66 5.11-5.8 8.12-15.87 17.31-15.86a15.4 15.4 0 0110.82 4.41c3.8 3.94 3.05 7.62 3.86 12.54 1.43 8.74 9.14 4 13.83-.41a192.12 192.12 0 019.24 18.77c-5.16 7.43-9.26 15.53-21.67 6.87-7.43-5.19-12-12.72-21.33-15.06-8.15-2-16.5.08-24.55 1.47-9.15 1.59-20 2.29-26.94 9.22-6.71 6.68-10.26 15.62-17.4 22.33-13.81 13-19.64 27.19-10.7 45.57 8.6 17.67 26.59 27.26 46 26 19.07-1.27 38.88-12.33 38.33 15.38-.2 9.81 1.85 16.6 4.86 25.71 2.79 8.4 2.6 16.54 3.24 25.21a158 158 0 004.74 30.07A191.75 191.75 0 01256 448.13z"/></svg>
+&nbsp;<span>English</span>
+              </a>
+              <div id="lang-selector">
+                              <a href="https://CoolXuzhi.ai" class="active">English
+                </a>
+                              <a href="https://CoolXuzhi.ai/zh-cn" class="">中
+                </a>
+                            </div>
+              <div id="lang-selector-closer" onclick="toggleLanguageDropdown()"></div>
+            </div>
+                        <div class="nav-search">
+              <a class="nav-search-button"><i aria-hidden="true"><?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor" style="vertical-align:middle"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"/></svg>
+</i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+  <main class="content" role="main" aria-label="Content">
+    <!-- begin hero-image -->
+<div class="hero-image">
+  <div class="hero-image__inner">
+    <img src="https://CoolXuzhi.ai/media/image-18.png" alt="CoolXuzhi" loading="lazy">
+  </div>
+</div>
+<!-- end hero-image -->
+
+<!-- begin hero -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="hero__inner">
+                      <h1 class="hero__title">CoolXuzhi</h1>
+                            </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="homepage-intro">
+            <div class="homepage-intro__content">
+              <h3>Explore the AI Native species in business, seek the Native Mind in philosophy.</h3>
+              <h3>Trace our Native Roots in civilization, demand Native Resolution in truth.</h3>
+<!--                 Trace our Native Roots in civilization, demand Native Resolution in truth.Trace our Native Roots in civilization.Demand Native Resolution in truth. -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+
+
+
+
+
+
+
+
+
+    <div class="tag-group">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <h2 class="tag-group__title">Business</h2>
+        </div>
+      </div>
+
+      <div class="row">
+                  <div class="article col col-3 col-w-4 col-d-6 col-t-12">
+                          <a href="https://CoolXuzhi.ai/twilight-of-management-ai-native-enterprise" class="article__image">
+                                <img src="https://CoolXuzhi.ai/media/zRQJ4nowj6zwrIdc.png" alt="I. The Twilight of Management" loading="lazy">
+              </a>
+                        <div class="article__inner">
+              <div class="article__content">
+                <div class="article__meta">
+                                                        <time class="article__date" datetime="28-11-2025">
+                      Nov 28, 2025
+                    </time>
+                                  </div>
+                <h2 class="article__title">
+                  <a href="https://CoolXuzhi.ai/twilight-of-management-ai-native-enterprise">I. The Twilight of Management</a>
+                </h2>
+                                  <p class="article__description">And the Dawn of Intelligence: Rewriting the Biological Genes of Enterprises</p>
+                                              </div>
+            </div>
+          </div>
+                  <div class="article col col-3 col-w-4 col-d-6 col-t-12">
+                          <a href="https://CoolXuzhi.ai/skeuomorphism-trap-ai-native-liquid-business" class="article__image">
+                                <img src="https://CoolXuzhi.ai/media/9ajDbDgyqeNqlZfc.png" alt="II. The Melting of Systems" loading="lazy">
+              </a>
+                        <div class="article__inner">
+              <div class="article__content">
+                <div class="article__meta">
+                                                        <time class="article__date" datetime="08-12-2025">
+                      Dec 8, 2025
+                    </time>
+                                  </div>
+                <h2 class="article__title">
+                  <a href="https://CoolXuzhi.ai/skeuomorphism-trap-ai-native-liquid-business">II. The Melting of Systems</a>
+                </h2>
+                                  <p class="article__description">From AI Enable to AI Native</p>
+                                              </div>
+            </div>
+          </div>
+                  <div class="article col col-3 col-w-4 col-d-6 col-t-12">
+                          <a href="https://CoolXuzhi.ai/human-responsibility-in-ai-native-era" class="article__image">
+                                  <span class="featured"><?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14" fill="currentColor" style="vertical-align:middle"><path d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z"/></svg>
+</span>
+                                <img src="https://CoolXuzhi.ai/media/image-9.png" alt="III. I Choose, I Shoulder, Therefore I Am" loading="lazy">
+              </a>
+                        <div class="article__inner">
+              <div class="article__content">
+                <div class="article__meta">
+                                                        <time class="article__date" datetime="26-12-2025">
+                      Dec 26, 2025
+                    </time>
+                                  </div>
+                <h2 class="article__title">
+                  <a href="https://CoolXuzhi.ai/human-responsibility-in-ai-native-era">III. I Choose, I Shoulder, Therefore I Am</a>
+                </h2>
+                                              </div>
+            </div>
+          </div>
+                  <div class="article col col-3 col-w-4 col-d-6 col-t-12">
+                          <a href="https://CoolXuzhi.ai/ai-native-company-data-vs-privacy" class="article__image">
+                                  <span class="featured"><?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14" fill="currentColor" style="vertical-align:middle"><path d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z"/></svg>
+</span>
+                                <img src="https://CoolXuzhi.ai/media/tankablog-01-1.png" alt="Log I. Open Source Log of an AI-Native Company: Data vs. Privacy" loading="lazy">
+              </a>
+                        <div class="article__inner">
+              <div class="article__content">
+                <div class="article__meta">
+                                                        <time class="article__date" datetime="30-12-2025">
+                      Dec 30, 2025
+                    </time>
+                                  </div>
+                <h2 class="article__title">
+                  <a href="https://CoolXuzhi.ai/ai-native-company-data-vs-privacy">Log I. Open Source Log of an AI-Native Company: Data vs. Privacy</a>
+                </h2>
+                                              </div>
+            </div>
+          </div>
+              </div>
+    </div>
+  </div>
+
+
+
+    <div class="tag-group">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <h2 class="tag-group__title">Awakening</h2>
+        </div>
+      </div>
+
+      <div class="row">
+                  <div class="article col col-3 col-w-4 col-d-6 col-t-12">
+                          <a href="https://CoolXuzhi.ai/ontological-entanglement-humanity-ai-god" class="article__image">
+                                <img src="https://CoolXuzhi.ai/media/375fChLZyoFuU3SZ.png" alt="I. Ontological Entanglement in the Silicon Age" loading="lazy">
+              </a>
+                        <div class="article__inner">
+              <div class="article__content">
+                <div class="article__meta">
+                                                        <time class="article__date" datetime="03-12-2025">
+                      Dec 3, 2025
+                    </time>
+                                  </div>
+                <h2 class="article__title">
+                  <a href="https://CoolXuzhi.ai/ontological-entanglement-humanity-ai-god">I. Ontological Entanglement in the Silicon Age</a>
+                </h2>
+                                  <p class="article__description">Humanity&#039;s Final Mission Before God Awakens</p>
+                                              </div>
+            </div>
+          </div>
+              </div>
+    </div>
+  </div>
+
+
+
+    <div class="tag-group">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <h2 class="tag-group__title">Technology</h2>
+        </div>
+      </div>
+
+      <div class="row">
+                  <div class="article col col-3 col-w-4 col-d-6 col-t-12">
+                          <a href="https://CoolXuzhi.ai/discoverative-intelligence-agi" class="article__image">
+                                <img src="https://CoolXuzhi.ai/media/0.-真正的智能.avif" alt="I. The Intelligence That Can Discover" loading="lazy">
+              </a>
+                        <div class="article__inner">
+              <div class="article__content">
+                <div class="article__meta">
+                                                        <time class="article__date" datetime="28-10-2025">
+                      Oct 28, 2025
+                    </time>
+                                  </div>
+                <h2 class="article__title">
+                  <a href="https://CoolXuzhi.ai/discoverative-intelligence-agi">I. The Intelligence That Can Discover</a>
+                </h2>
+                                              </div>
+            </div>
+          </div>
+              </div>
+    </div>
+  </div>
+
+
+
+    <div class="tag-group">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <h2 class="tag-group__title">Religious</h2>
+        </div>
+      </div>
+
+      <div class="row">
+                  <div class="article col col-3 col-w-4 col-d-6 col-t-12">
+                          <a href="https://CoolXuzhi.ai/genesis-of-silicon-noah-entropy" class="article__image">
+                                <img src="https://CoolXuzhi.ai/media/image-7.png" alt="I. Genesis of Silicon: The Flood, Noah, and the Entropy of Tolerance" loading="lazy">
+              </a>
+                        <div class="article__inner">
+              <div class="article__content">
+                <div class="article__meta">
+                                                        <time class="article__date" datetime="22-12-2025">
+                      Dec 22, 2025
+                    </time>
+                                  </div>
+                <h2 class="article__title">
+                  <a href="https://CoolXuzhi.ai/genesis-of-silicon-noah-entropy">I. Genesis of Silicon: The Flood, Noah, and the Entropy of Tolerance</a>
+                </h2>
+                                              </div>
+            </div>
+          </div>
+                  <div class="article col col-3 col-w-4 col-d-6 col-t-12">
+                          <a href="https://CoolXuzhi.ai/pure-land-civilizational-protocol-superintelligence" class="article__image">
+                                <img src="https://CoolXuzhi.ai/media/image-11.png" alt="II. Pure Land" loading="lazy">
+              </a>
+                        <div class="article__inner">
+              <div class="article__content">
+                <div class="article__meta">
+                                                        <time class="article__date" datetime="29-12-2025">
+                      Dec 29, 2025
+                    </time>
+                                  </div>
+                <h2 class="article__title">
+                  <a href="https://CoolXuzhi.ai/pure-land-civilizational-protocol-superintelligence">II. Pure Land</a>
+                </h2>
+                                  <p class="article__description">A Civilizational Protocol for Coexisting with Superintelligence (Part I)</p>
+                                              </div>
+            </div>
+          </div>
+              </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </main>
+
+<!-- begin search -->
+<div class="search-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="search">
+          <form class="search-form">
+            <i aria-hidden="true" class="search-input-icon"><?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor" style="vertical-align:middle"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"/></svg>
+</i>
+            <input class="search-field" type="text" placeholder="Type to search…">
+            <button class="search-button" type="submit">
+              <i aria-hidden="true"><?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor" style="vertical-align:middle"><path d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"/></svg>
+</i>
+            </button>
+          </form>
+          <div class="popular-wrapper">
+            <h4 class="popular-title">Topics</h4>
+            <span class="popular-tags post-tags">
+                                            <a href="https://CoolXuzhi.ai/tag/the-business-pillar">Business</a>
+                              <a href="https://CoolXuzhi.ai/tag/the-religious-pillar">Religious</a>
+                              <a href="https://CoolXuzhi.ai/tag/technology">Technology</a>
+                              <a href="https://CoolXuzhi.ai/tag/the-awakening-pillar">Awakening</a>
+                              <a href="https://CoolXuzhi.ai/tag/tanka">Tanka</a>
+                          </span>
+          </div>
+          <div class="search-result"></div>
+        </div>
+        <button class="search-wrapper-close" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end search -->
+
+<!-- begin footer-widgets -->
+<section class="footer-widgets">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="widget-box">
+          <div class="row">
+
+
+<div class="col col-4 col-d-6 col-t-12">
+  <div class="widget widget-recent">
+    <div class="widget__head">
+      <h3 class="widget__title">Recent Posts</h3>
+    </div>
+              <div class="recent-post">
+                  <a href="https://CoolXuzhi.ai/ai-native-company-data-vs-privacy" class="recent-post__image" aria-hidden="true">
+            <img src="https://CoolXuzhi.ai/media/tankablog-01-1.png" alt="Log I. Open Source Log of an AI-Native Company: Data vs. Privacy" loading="lazy">
+          </a>
+                <div class="recent-post__content">
+          <time class="recent-post__date" datetime="30-12-2025">
+            Dec 30, 2025
+          </time>
+          <h4 class="recent-post__title"><a href="https://CoolXuzhi.ai/ai-native-company-data-vs-privacy">Log I. Open Source Log of an AI-Native Company: Data vs. Privacy</a></h4>
+        </div>
+      </div>
+          <div class="recent-post">
+                  <a href="https://CoolXuzhi.ai/pure-land-civilizational-protocol-superintelligence" class="recent-post__image" aria-hidden="true">
+            <img src="https://CoolXuzhi.ai/media/image-11.png" alt="II. Pure Land" loading="lazy">
+          </a>
+                <div class="recent-post__content">
+          <time class="recent-post__date" datetime="29-12-2025">
+            Dec 29, 2025
+          </time>
+          <h4 class="recent-post__title"><a href="https://CoolXuzhi.ai/pure-land-civilizational-protocol-superintelligence">II. Pure Land</a></h4>
+        </div>
+      </div>
+          <div class="recent-post">
+                  <a href="https://CoolXuzhi.ai/human-responsibility-in-ai-native-era" class="recent-post__image" aria-hidden="true">
+            <img src="https://CoolXuzhi.ai/media/image-9.png" alt="III. I Choose, I Shoulder, Therefore I Am" loading="lazy">
+          </a>
+                <div class="recent-post__content">
+          <time class="recent-post__date" datetime="26-12-2025">
+            Dec 26, 2025
+          </time>
+          <h4 class="recent-post__title"><a href="https://CoolXuzhi.ai/human-responsibility-in-ai-native-era">III. I Choose, I Shoulder, Therefore I Am</a></h4>
+        </div>
+      </div>
+      </div>
+</div>
+
+                                                <div class="col col-4 col-d-6 col-t-12">
+                          <div class="widget widget-newsletter">
+                            <div class="widget__head">
+                              <h3 class="widget__title">Newsletter</h3>
+                            </div>
+                            <div class="newsletter__content">
+                              <iframe
+                                src="https://mindful-palette-322177.framer.app/newsletter-coolxuzhi"
+                                width="100%"
+                                height="170"
+                                frameborder="0"
+                                loading="lazy"
+                                style="border: none; border-radius: 8px;">
+                              </iframe>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end footer-widgets -->
+
+<!-- begin footer -->
+<footer class="footer">
+
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+
+      <div class="footer__inner">
+
+        <div class="logo">
+          <a class="logo__link" href="https://CoolXuzhi.ai">
+                          <img class="logo__image" src="https://CoolXuzhi.ai/media/blog-2.svg" alt="" />
+                      </a>
+        </div>
+
+        <div class="footer__info">
+<nav class="footer__nav">
+                            <a class="footer__nav__link " href="/privacy">privacy</a>
+  </nav>
+          <div class="footer__social">
+
+
+		<a class="social-link" target="_blank" href="https://x.com/tianqiao_chen" title="Twitter">
+		<i class="icon" aria-hidden="true"><?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="21" height="21" fill="currentColor" style="vertical-align:middle"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+</i>
+	</a>
+
+		<a class="social-link" target="_blank" href="https://www.linkedin.com/in/tianqiao-chen/" title="Linkedin">
+		<i class="icon" aria-hidden="true"><?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="21" height="21" fill="currentColor" style="vertical-align:middle"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"/></svg>
+</i>
+	</a>
+
+            	<a class="social-link" target="_blank" href="https://CoolXuzhi.ai/feed" title="RSS Feed">
+		<i class="icon" aria-hidden="true"><?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="21" height="21" fill="currentColor" style="vertical-align:middle"><path d="M108.56 342.78a60.34 60.34 0 1060.56 60.44 60.63 60.63 0 00-60.56-60.44z"/><path d="M48 186.67v86.55c52 0 101.94 15.39 138.67 52.11s52 86.56 52 138.67h86.66c0-151.56-125.66-277.33-277.33-277.33z"/><path d="M48 48v86.56c185.25 0 329.22 144.08 329.22 329.44H464C464 234.66 277.67 48 48 48z"/></svg>
+</i>
+	</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</footer>
+<!-- end footer -->
+<script data-flashload-skip-script src="https://CoolXuzhi.ai/assets/flashload.js" async onload="__initFlashload()"></script>
+<script data-flashload-skip-script>
+
+
+    function __initFlashload() {
+        Flashload.start({
+            basePath: ""
+        })
+    }
+</script>
+
+
+
+
+
+</body>
+</html>
